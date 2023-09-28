@@ -1,0 +1,124 @@
+.container-max-width {
+    max-width: 100dvw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .btn{
+    border-radius: 28px;
+  }
+
+  div#scanner{
+    width: 90%; 
+    max-width: 100dvw;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  div#scanner > video{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+  }
+
+  div#scanner-container{
+    margin-top: 50px;
+  }
+
+  div#scanner > canvas.drawingBuffer{
+    display: none;
+  }
+
+  div.phone-frame{
+    background-color: bisque;
+    overflow: hidden;
+    position: relative;
+    background-size: 200px 200px;
+    background-repeat: repeat;
+  }
+
+  button#searchMethod{
+    margin-top: 2px;
+  }
+
+  header.container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+  }
+
+  header h2 {
+    width: max-content;
+  }
+
+  div#scanBtnRow{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    left: 0;
+  }
+
+  div.row.pillRow{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.pill{
+    display: block;
+    position: relative;
+    height: 50px;
+    width: max-content;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: azure;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+    z-index: 10;
+  }
+
+  div.pill.hidden{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  form.hidden{
+    display: none;
+  }
+
+  dialog#itemDesc{
+    width: 80%;
+    height: max-content;
+  }
+
+  @media screen and (min-width: 768px){
+    div.phone-frame{
+        border: 2px #212121 solid;
+        height: 97dvh;
+    }
+  }
+
+  @media screen and (max-width: 767px){
+    div.phone-frame{
+        width: 100dvw;
+        height: 100dvh;
+    }
+    body{
+        background-color: bisque;
+    }
+    div.col-md-6.offset-md-3{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
